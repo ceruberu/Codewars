@@ -1,0 +1,4 @@
+function disemvowel(str) {
+var x = str.replace(/[aeiou]/gi,'');
+return x;
+}
