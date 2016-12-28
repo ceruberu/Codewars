@@ -1,0 +1,19 @@
+function Node(data) {
+  var node = {}
+  node.data = data;
+  node.next = null;
+  return node;
+}
+
+function push(head, data) {
+  var foo = Node(data);
+  foo.next = head;
+  return foo;
+}
+
+function buildOneTwoThree() {
+  var linked = push(null,3)
+  linked = push(linked,2);
+  linked = push(linked,1);
+  return linked;
+}
